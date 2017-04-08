@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html layout</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.js">
@@ -15,30 +16,58 @@
         <li><a href="#">Topics</a></li>
         <li><a href="#">Write for us</a></li>
       </ul>
+        <!-- <button id="button">LEARN MORE</button> -->
     </nav>
 
+
     <div class="hero-copy">
-      <h1 class="issue-header">Widen Out: Using Your Blog to Attract New Clients</h1>
-      <p class="entry-summery">by <strong>Dmitry Dragilev</strong> · 9 Comments</p>
-      <p>A weblog’s ability to attract client work is one of its most overlooked benefits. JustReachOut’s Dmitry Dragilev shares some simple ideas on how to create content that generates real interest in our work.<p>
-      </br>
-      <h2>More from A List Apart</h2>
+      <h1>Widen Out: </br>Using Your Blog to Attract New Clients</h1>
+      <p class="entry-summery">by <span class="bold-text">Dmitry Dragilev</span> · 9 Comments</p>
+      <p class="deck-text">A weblog’s ability to attract client work is one of its most overlooked benefits. </br>JustReachOut’s Dmitry Dragilev shares some simple ideas on how to create content that generates real interest in our work.<p>
+      <button id="button">MORE FROM A LIST APART</button>
+
     </div>
 
-      <p><h4>Practical CSS Grid: </br>Adding Grid to an Existing Design</h4>
-      <small>by <strong>Eric Meyer</strong></small>
-      </br>Converting existing designs to Grid without breaking in non-grid browsers
-      </br><small>CSS · March 23, 2017</small></p>
+    <section class="row">
+      <div class="grid">
+        <section class="teaser col-1-4">
+          <a href="#">Professional</a>
+          <h5>Experience</h5>
+          <h3>Over 12 years</h3>
+          <p>Successfully manage and create new businesses and increase revenue for organizations through creative strategy, visual communications, marketing campaigns in finance, </br>legal, logistics, health, none-for-profit, food &amp; publishing sectors.</p>
+          <p>Among those are <strong>Transcontinental</strong>; <em><br>Style at Home and Canadian Gardening</em>, <strong>Karen Lim Design</strong>; <em>LCBO Food &amp; Drink</em>, <strong>Cleveland Clinic of Toronto</strong>, <strong><br>The Scotiabank</strong>, <strong>Evans Investment Councel</strong> and <strong>Tirgan Festival</strong>.</p>
+        </section><!--
+
+      --><section class="teaser col-1-4">
+          <a href="#">Schools</a>
+          <h5>Education</h5>
+          <h3>Three-Institutes</h3>
+          <p>9-weeks Immersive Full-Stack Web Application Development<br>Bitmaker | 2016</p>
+          <p><strong>Certificate</strong> <br>in Seach Engine Optimization (SEO) <br>Market Motive | 2015</p>
+          <p><strong>Bachelor Degree</strong> <br>in Graphic Design, (B.Des.) <br>York University &amp; Sheridan College <br>1997-2001</p>
+        </section><!--
+
+          --><section class="teaser col-1-4">
+            <a href="#">Professional</a>
+            <h5>Experience</h5>
+            <h3>Over 12 years</h3>
+            <p>Successfully manage and create new businesses and increase revenue for organizations through creative strategy, visual communications, marketing campaigns in finance, </br>legal, logistics, health, none-for-profit, food &amp; publishing sectors.</p>
+            <p>Among those are <strong>Transcontinental</strong>; <em><br>Style at Home and Canadian Gardening</em>, <strong>Karen Lim Design</strong>; <em>LCBO Food &amp; Drink</em>, <strong>Cleveland Clinic of Toronto</strong>, <strong><br>The Scotiabank</strong>, <strong>Evans Investment Councel</strong> and <strong>Tirgan Festival</strong>.</p>
+          </section><!--
 
 
-      Practical Design Discovery
-      by Dan Brown
-      Ensure design choices trace back to specific objectives
-      Workflow & Tools · March 9, 2017
-      Long-Term Design: Rewriting the Design Sales Pitch
-      by Jarrod Drysdale
-      Stop hawking design like it was a household gadget that needs upgrading and start building relationships instead.
-      Design · March 2, 2017
-
+        --><section class="teaser col-1-4">
+          <a href="#">Technical</a>
+          <h5>Proficiencies</h5>
+          <h3>Giant Tool-Box</h3>
+          <p><strong>Code</strong></br>
+          HTML5/CSS3, JavaScript, JQuery, <br>Ajax, API, SQLight, Ruby on Rails <br>and Git</p>
+          <p><strong>Software</strong></br>
+          Adobe CS, Search Engine Optimization, Microsoft Word</p>
+          <p><strong>Visual Arts &amp; Cooking</strong></br>
+          Silkscreen, Lethography, Etching printmaking, and stainglass overlay <b> and an avid cook!</p>
+        </section>
+      </div>
+    </section>
   </body>
 </html>

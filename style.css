@@ -1,0 +1,62 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font: 500 16px/22px "georgia,serif", serif;
+}
+
+.hero-copy {
+  text-align: center;
+  font-size: 12px;
+}
+
+h1 {
+    font-size: 2em;
+    display: inline;
+}
+
+.entry-summery {
+  padding: 0;
+  align-items: center;
+    font-size: 16px;
+    line-height: 36px;
+    font-style: normal;
+    font-family: georgia,serif;
+}
+
+.main-nav ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+    color: white;
+    font-variant-caps: all-small-caps;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-style:
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#4CAF50;
+}

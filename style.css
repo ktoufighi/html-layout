@@ -165,6 +165,9 @@ a:hover:not(.active) {
   vertical-align: top;
 }
 
+.grid {
+  margin-top: 50px;
+}
 .grid,
 .col-1-4,
 .col-2-4 {
@@ -173,6 +176,13 @@ a:hover:not(.active) {
   padding-right: 40px;
 }
 
+img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+  }
+
 /* For mobile phones: */
 
 @media only screen and (min-width: 250px) {
@@ -180,7 +190,7 @@ a:hover:not(.active) {
     width: 100%;
     display: block;
     position: fixed;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     letter-spacing: 2px;
     display: center;
   }

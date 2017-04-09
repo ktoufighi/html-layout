@@ -38,8 +38,12 @@ body {
   font: 500 15px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/*=========================================*/
+/* Cover Image Container */
+/*=========================================*/
+
 .container {
-  background: url(img/nathan-anderson-139511.jpg) no-repeat center center;
+  background: url(img/bonnie-kittle-180056.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -53,6 +57,10 @@ body {
   z-index: 1;
 }
 
+/*=========================================*/
+/* Hero copy */
+/*=========================================*/
+
 .hero-copy {
   padding-top: 50px;
   display: block;
@@ -62,6 +70,7 @@ body {
   font-weight: 100;
   line-height: 1;
   letter-spacing: 2px;
+  text-shadow: 1px 1px 10px #333;
 }
 
 p.deck-text {
@@ -73,17 +82,26 @@ p.deck-text {
     line-height: 1.2;
 }
 
-h3, h4, h5, p {
-  margin-bottom: 22px;
+/*=========================================*/
+/* Heading tags */
+/*=========================================*/
+
+h2, h3, h4, h5, p {
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 55px;
   line-height: 44px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: fantasy;
+  color: deeppink;
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 25px;
+  text-align: center;
 }
 
 h4 {
@@ -97,11 +115,33 @@ h5 {
   text-transform: uppercase;
   letter-spacing: .25em;
 }
+ p {
+   text-align: center;
+ }
+
+ /*=========================================*/
+ /* How It Works */
+ /*=========================================*/
+
+.how-it-works {
+    text-transform: uppercase;
+    font-size: 23px;
+    position: relative;
+    display: block;
+    text-align: -webkit-center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+/*=========================================*/
+/* Navigation positioning */
+/*=========================================*/
 
 .main-nav ul {
   width: 100%;
   display: inline-block;
-  /*position: fixed;*/
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -111,6 +151,15 @@ h5 {
   letter-spacing: 2px;
   display: left;
 }
+
+.fixed-nav main-nav {
+  position: fixed;
+  box-shadow: 0 5px rgba(0,0,0,0.1);
+}
+
+/*=========================================*/
+/* Button */
+/*=========================================*/
 
 #button {
   font-size: 14px;
@@ -135,8 +184,15 @@ background-color:#4CAF50;
 border-radius: 5px;
 }
 
+/*=========================================*/
+/* Links */
+/*=========================================*/
+
 a {
-  text-decoration: none;
+    text-decoration: none;
+    color: #999;
+    font-size: 20px;
+    font-weight: 100;
 }
 
 li {
@@ -144,6 +200,8 @@ li {
 }
 
 li a {
+  font-size: 15px;
+  font-weight: 500;
   display: block;
   color: white;
   font-variant-caps: all-small-caps;
@@ -152,9 +210,13 @@ li a {
   text-decoration: none;
 }
 
-a:hover:not(.active) {
+li a:hover:not(.active) {
     background-color: #111;
 }
+
+/*=========================================*/
+/* Grid */
+/*=========================================*/
 
 .col-1-3 {
   width: 33.33%;
@@ -172,23 +234,27 @@ a:hover:not(.active) {
 }
 
 .grid {
-  margin: auto;
+  /*margin: auto;*/
   width: 60%;
 }
 .grid,
 .col-1-3,
 .col-2-3 {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-img {
+/*=========================================*/
+/* Image specs */
+/*=========================================*/
+
+/*img {
     width: 100%;
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px #999;
-  }
+  }*/
 
   input[type=text] {
     float: center;
@@ -207,7 +273,16 @@ input[type=text]:focus {
     border: 2px solid #333;
 }
 
-/* For mobile phones: */
+.footer-area {
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+  background-color: #333;
+}
+
+/*=========================================*/
+/* Media Queries for mobile devices */
+/*=========================================*/
 
 @media only screen and (min-width: 250px) {
   .main-nav ul {
@@ -328,7 +403,7 @@ input[type=text]:focus {
       }
 
       .grid {
-        padding-top: 50px;
+        padding-top: 30px;
         margin: auto;
         width: 60%;
       }

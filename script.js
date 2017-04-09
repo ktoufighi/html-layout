@@ -1,8 +1,8 @@
-const nav = document.querySelector(".main-nav");
-const topOfNav = nav.offsetTop;
+const nav = document.querySelector("#button");
+const topOfbutton = nav.offsetTop;
 
 function fixNav() {
-  console.log(toOfNav);
+  console.log(topOfbutton);
 }
 
 window.addEventListener('scroll', fixNav);

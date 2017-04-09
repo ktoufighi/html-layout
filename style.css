@@ -61,7 +61,7 @@ body {
   font-size: 1em;
   font-weight: 100;
   line-height: 1;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 p.deck-text {
@@ -101,7 +101,7 @@ h5 {
 .main-nav ul {
   width: 100%;
   display: inline-block;
-  position: fixed;
+  /*position: fixed;*/
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -213,7 +213,7 @@ input[type=text]:focus {
   .main-nav ul {
     width: 100%;
     display: inline-block;
-    position: fixed;
+    /*position: fixed;*/
     margin-bottom: 5px;
     letter-spacing: 2px;
   }
@@ -283,7 +283,7 @@ input[type=text]:focus {
     .main-nav ul {
       width: 100%;
       display: block;
-      position: fixed;
+      /*position: fixed;*/
       margin-bottom: 10px;
       letter-spacing: 2px;
       display: center;
@@ -352,7 +352,7 @@ input[type=text]:focus {
       .main-nav ul {
         width: 100%;
         display: block;
-        position: fixed;
+        /*position: fixed;*/
         margin-bottom: 10px;
         letter-spacing: 2px;
         display: center;

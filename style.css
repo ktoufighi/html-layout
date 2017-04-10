@@ -133,25 +133,35 @@ h5 {
   margin-bottom: 0;
   font-weight: 700;
   letter-spacing:normal;
-
 }
 
 /*=========================================*/
 /* Navigation */
 /*=========================================*/
 
+.main-nav {
+ width: 100%;
+ position: relative;
+ margin: 0;
+ padding: 15px 15px 0 15px;
+ background-color: #333;
+ overflow: hidden;
+ margin-bottom: 20px;
+
+}
+.main-nav img{
+  display: inline-block;
+
+}
+
 .main-nav ul {
-  width: 100%;
   display: inline-block;
   position: relative;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-  overflow: hidden;
-  margin-bottom: 20px;
+  /*margin: 0;
+  padding: 0;*/
   letter-spacing: 2px;
-  display: left;
+  /*float: left;*/
 }
 
 .fixed-nav main-nav {
@@ -163,15 +173,21 @@ h5 {
   position: relative;
   display: inline;
   align-items: center;
-  width: 10%;
-  height: 10%;
-  float: right;
-  clear:
+  width: 100px;
+  float: left;
+
 }
 
 /*=========================================*/
 /* Button */
 /*=========================================*/
+
+.main-nav button#button {
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
 
 #button {
   font-size: 12px;
@@ -318,7 +334,6 @@ input[type=text]:focus {
 
 @media only screen and (min-width: 250px) {
   .main-nav ul {
-    width: 100%;
     display: inline-block;
     /*position: fixed;*/
     margin-bottom: 5px;
@@ -384,8 +399,6 @@ input[type=text]:focus {
 
 @media only screen and (min-width: 760px) {
   .main-nav ul {
-    width: 100%;
-    display: block;
     /*position: fixed;*/
     margin-bottom: 10px;
     letter-spacing: 2px;
@@ -455,8 +468,6 @@ input[type=text]:focus {
 
 @media only screen and (min-width: 960px) {
   .main-nav ul {
-    width: 100%;
-    display: block;
     /*position: fixed;*/
     margin-bottom: 10px;
     letter-spacing: 2px;

@@ -8,8 +8,13 @@
     <!-- <link type="text/javascript" rel="stylesheet" href="script.js"> -->
   <href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
   </head>
+
   <body>
     <div class="container">
+      <button id="button">LEARN MORE</button>
+      <div id="logo">
+        <img src="img/flowers_logo-wht.png">
+      </div>
 
     <!-- NAVIGATION  -->
     <nav class="main-nav">
@@ -19,7 +24,6 @@
         <li><a href="#">Events</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-        <!-- <button id="button">LEARN MORE</button> -->
     </nav>
 
     <!-- HERO -->
@@ -28,72 +32,80 @@
       <p class="deck-text"> Curated to your taste, occassion and space. Starting at $75 per delivery.
       </br>Schedule a complimentary design consultation today.</p>
 
-    <!-- FORM -->
-    <form>
-      <label for="fname"></label>
-      <input type="text" id="fname" name="fname" value="Full name">
-      <label for="email"></label>
-      <input type="text" id="email" name="email" value="Email address">
-    </form>
+      <!-- FORM -->
+      <form>
+        <label for="fname"></label>
+        <input type="text" id="fname" name="fname" value="Full name">
+        <label for="email"></label>
+        <input type="text" id="email" name="email" value="Email address">
+      </form>
       <button id="button">FREE CONSULTATION</button>
     </div>
   </div>
 
-    <!-- COLUMNS  -->
-    <section class="row">
-      <div class="how-it-works">How it Works</div>
+  <!-- COLUMNS  -->
+  <section class="row">
+    <div class="how-it-works">How it Works</div>
       <div class="grid">
-        <section class="teaser col-1-3 border">
+        <section class="teaser col-1-3">
           <h2> - 1 - </h2>
+          <img src="img/neslihan-gunaydin-3543.jpg" alt="design flower arrangments">
           <h3>DESIGN</h3>
           <p>Your personal design consultant meets with you to discuss style, preferences and space.</p>
         </section><!--
 
-      --><section class="teaser col-1-3">
-          <h2> - 2 - </h2>
-            <h3>SCHEDULE</h3>
-            <p>We provide a custom proposal for floral service based on your schedule (weekly, bi-weekly or monthly).</p>
-          </section><!--
+  --><section class="teaser col-1-3">
+      <h2> - 2 - </h2>
+      <img src="img/jonathan-velasquez-1187.jpg" alt="schedule appointment">
+        <h3>SCHEDULE</h3>
+        <p>We provide a custom proposal for floral service based on your schedule (weekly, bi-weekly or monthly).</p>
+      </section><!--
 
-      --><section class="teaser col-1-3">
-        <h2> - 3 - </h2>
-          <h3>ENJOY</h3>
-          <p>We hand deliver your custom arrangements for you to enjoy. It's that simple.</p>
-        </section>
-      </div>
+  --><section class="teaser col-1-3">
+    <h2> - 3 - </h2>
+    <img src="img/bruno-nascimento-198170.jpg" alt="enjoy the flowers">
+      <h3>ENJOY</h3>
+      <p>We hand deliver your custom arrangements for you to enjoy. It's that simple.</p>
     </section>
+  </section>
 
-    <!-- FOOTER  -->
+  <!-- FOOTER  -->
     <footer class="footer-area">
-      <nav class="footer-nav">
+      <section class="grid">
+        <nav class= "bottom">
+          <ul>
+            <li><img src="img/f-icon.png" alt="facebook"></li>
+            <li><img src="img/i-icon.png" alt="instagram"></li>
+            <li><img src="img/l-icon.png" alt="linkedin"></li>
+            <li><img src="img/t-icon.png" alt="twitter"></li>
+          </ul>
 
-      </nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Ideas</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+       </div>
+     </section>
     </footer>
-
-
-
-
-
-
-
-
-
 
     <!-- JavaScript code -->
     <script>
-        const nav = document.body.querySelector("#button");
-        const topOfbutton = nav.offsetTop;
+      const nav = document.body.querySelector("#button");
+      const topOfbutton = nav.offsetTop;
 
-        function fixNav() {
-          if(window.scrollY >= topOfbutton) {
-            document.body.classList.add('fixed-nav');
-          }
-          else {
-            document.body.classList.remove('fixed-nav');
-          }
+      function fixNav() {
+        if(window.scrollY >= topOfbutton) {
+          document.body.classList.add('fixed-nav');
         }
+        else {
+          document.body.classList.remove('fixed-nav');
+        }
+      }
 
-        window.addEventListener('scroll', fixNav);
+      window.addEventListener('scroll', fixNav);
     </script>
   </body>
 </html>

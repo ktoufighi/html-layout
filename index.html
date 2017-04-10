@@ -39,7 +39,7 @@
         <label for="email"></label>
         <input type="text" id="email" name="email" value="Email address">
       </form>
-      <button id="button">FREE CONSULTATION</button>
+      <button id="button" class="ctabutton">FREE CONSULTATION</button>
     </div>
   </div>
 
@@ -93,7 +93,7 @@
 
     <!-- JavaScript code -->
     <script>
-      const nav = document.body.querySelector("#button");
+      const nav = document.body.querySelector(".ctabutton");
       const topOfbutton = nav.offsetTop;
 
       function fixNav() {
@@ -104,7 +104,6 @@
           document.body.classList.remove('fixed-nav');
         }
       }
-
       window.addEventListener('scroll', fixNav);
     </script>
   </body>

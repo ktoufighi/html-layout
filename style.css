@@ -164,6 +164,8 @@ h5 {
   /*float: left;*/
 }
 
+
+
 .fixed-nav main-nav {
   position: fixed;
   box-shadow: 0 5px rgba(0,0,0,0.1);
@@ -311,12 +313,17 @@ input[type=text]:focus {
   background-color: #333;
 }
 
+.footer-nav {
+  float: right;
+}
+
 .bottom img {
   width: 66px;
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
   float: left;
+  list-style-type: none;
 }
 
 .bottom li a {
@@ -325,7 +332,10 @@ input[type=text]:focus {
   letter-spacing: 2px;
   float: right;
   clear: both;
+}
 
+.bottom ul {
+  list-style-type: none;
 }
 
 /*=========================================*/
